@@ -6,11 +6,11 @@ Write a function named capital_indexes. The function takes a single parameter, w
 
 For example, calling capital_indexes("HeLlO") should return the list [0, 2, 4].
 """
-def capital_indexes(strg):
+def capital_indexes(str):
     myList=[]
-    for ch in strg:
-        if ch.isupper():
-            myList.append(ch)
+    for i in range(len(str)):
+        if str[i].isupper():
+            myList.append(i)
     return myList
 #TEST
 print(capital_indexes("StrInG"))
