@@ -27,3 +27,12 @@ def remove_dots(str):
 #TEST
 print(add_dots("Hello"))
 print(remove_dots("He.ll.o"))
+
+"""
+# the short way
+def add_dots(s):
+    return ".".join(s)
+
+def remove_dots(s):
+    return s.replace(".", "")
+"""
